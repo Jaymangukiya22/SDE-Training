@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include<vector>
 using namespace std;
 typedef vector<int> vi;
 // typedef for(int i = 0; i < n; i++) forn;
