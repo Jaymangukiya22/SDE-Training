@@ -1,8 +1,10 @@
-#include <bits/stdc++.h>
+#include<iostream>
+#include<map>
+#include<vector>
 using namespace std;
 int main()
 {
-    vector<int> v = {1, 2, 3, 2, 3, 3, 6, 4, 1, 3, 6, 3};
+    vector<int> v = {23, 35, 35, 21, 24, 23, 27, 34, 24, 35, 32};
     map<int, int> mode;
     int max_freq = 0;
     int ans;
