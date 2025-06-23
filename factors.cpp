@@ -3,21 +3,25 @@
 using namespace std;
 map<int, int> getPrimeFactorFrequencies(int n) {
     map<int, int> factors;
-    while (n % 2 == 0) {
+    int count = 0;
+    while ((n&1) == 0) {
         factors[2]++;
+        count++;
         n /= 2;
     }
 
-    for (int i = 3; i * i <= n; i += 2) {
+    for (int i = 3; i <= n/i; i += 2) {
         while (n % i == 0) {
             factors[i]++;
+            count++;
             n /= i;
         }
     }
     if (n > 2) {
         factors[n]++;
+        count++;
     }
-
+    cout<<count;
     return factors;
 }
 

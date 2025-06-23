@@ -2,5 +2,5 @@
 using namespace std;
 
 int main(){
-    cout<<(1<<(2*0));
+    cout<<(1<<4);
 }
