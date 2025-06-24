@@ -8,8 +8,8 @@
 
 using namespace std;
 int main() {
-    const int LIMIT = 10000000;
-    unordered_map<int, vector<pair<int, int>>> cubeSums;
+    const int LIMIT = 1e7;
+    map<int, vector<pair<int, int>>> cubeSums;
 
     for (int a = 1; a <= cbrt(LIMIT); ++a) {
         int a3 = a * a * a;
@@ -21,7 +21,6 @@ int main() {
         }
     }
 
-    cout << "Ramanujan numbers up to " << LIMIT << ":\n";
     for (const auto& entry : cubeSums) {
         if (entry.second.size() >= 2) {
             cout << entry.first << " = ";
