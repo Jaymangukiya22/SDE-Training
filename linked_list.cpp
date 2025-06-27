@@ -30,6 +30,7 @@ class Linkedlist{
     }
     void printlist();
     void insertnode(int data);
+    void insertnodeatend(int data);
     bool searchvalue(int val);
     void deletenode(int pos);
     void deletenode(Node *node);
@@ -40,6 +41,20 @@ void Linkedlist:: printlist(){//scope resolution (::)
         cout<<"Linked list:"<<endl;
         cout<<temp->data<<endl;
         temp = temp->next;
+    }
+}
+
+void Linkedlist:: insertnode(int data){
+    Node* newnode = new Node(data);
+    newnode->next = head;
+    head = newnode;
+}
+
+void Linkedlist:: insertnodeatend(int data){
+    Node* newnode = new Node(data);
+    Node* temp = head;
+    if(head==nullptr){
+        
     }
 }
 
