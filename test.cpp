@@ -1,10 +1,20 @@
-#include <iostream>
+#include<iostream>
+#include<vector>
+#include<array>
+#include<map>
+#include<unordered_map>
+#include<cmath>
+#include<list>
+#include<string>
 using namespace std;
 
-int main() {
-
-    for(int i = 0; i<10; i++){
-        cout<<i<<"-"<<(i>>1)<<endl;
-    }
+int main(){
+    cout<<pow(2,4);
     return 0;
 }
+
+
+
+
+
+

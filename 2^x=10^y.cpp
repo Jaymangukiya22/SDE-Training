@@ -11,11 +11,11 @@ double percent_difference(double derived, double actual)
 
 void Print_Vector(vector<pair<double, pair<int, int>>> &answer)
 {
-    vector<pair<double, pair<int, int>>>::iterator itr;
-
-    for (itr = answer.begin(); itr != answer.end(); itr++)
+    // vector<pair<double, pair<int, int>>>::iterator itr;
+    for(auto p:answer)
+    // for (itr = answer.begin(); itr != answer.end(); itr++)
     {
-        cout << "x = " << itr->second.first << "\ty = " << itr->second.second << "\tdifference = " << itr->first << endl;
+        cout << "x = " << p.second.first << "\ty = " << p.second.second << "\tdifference = " << p.first << endl;
     }
 }
 
