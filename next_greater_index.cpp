@@ -21,7 +21,7 @@ vector<int> solve(vector<int> &v){
         s.push(i);
     }
     return ans;
-    return ans;
+    
 }
 
 int main(){
