@@ -6,6 +6,7 @@
 #include<cmath>
 #include<list>
 #include<string>
+#include<algorithm>
 using namespace std;
 
 int main(){
@@ -15,7 +16,10 @@ int main(){
     //     ans.push_back(c[i]);
     // }
     // cout<<ans;
-    cout<<"😂😭😩";
+    // cout<<"😂😭😩";
+    string a = "mba";
+    sort(a.begin(), a.end());
+    cout<<a;
 }
 
 
