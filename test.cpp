@@ -17,9 +17,11 @@ int main(){
     // }
     // cout<<ans;
     // cout<<"😂😭😩";
-    string a = "mba";
-    sort(a.begin(), a.end());
-    cout<<a;
+    int a = 5, b = 4;
+    a = a^b;
+    b = a^b;
+    a = a^b;
+    cout<<a<<b;
 }
 
 
