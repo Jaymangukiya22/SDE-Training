@@ -14,12 +14,20 @@ string solve(string n){
         count[s]++;
     }
     string ans = "";
-    for(auto i:count){
-        ans+=i.first;
-        i.second--;
-        cout<<i.second<<endl;
+    int size = n.size();
+    while(size>0){
+        for(auto &i:count){
+            if(i.second==0) continue;
+            if(ans[ans.size()-1]==i.first){
+                ans = i.first + ans;
+            }
+            ans+=(i.first);
+            i.second--;
+            size--;
+        }
     }
     return ans;
+    
 }
 
 int main(){
