@@ -6,6 +6,10 @@
         "list": "cpp",
         "map": "cpp",
         "stack": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "bitset": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp"
     }
 }
